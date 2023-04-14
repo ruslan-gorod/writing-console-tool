@@ -36,7 +36,8 @@ public class AppRepository {
     }
 
     public void populateTables(AppParameters parameters) {
-        getInfoAboutDatabase().forEach((key, value) -> populateTable(key, value, parameters));
+        Map<String, List<TablesInfo>> map = getInfoAboutDatabase();
+        map.keySet().stream().parallel().forEach(k -> populateTable(k, map.get(k), parameters));
     }
 
     private void dropAllTablesInDatabase(Connection conn) {

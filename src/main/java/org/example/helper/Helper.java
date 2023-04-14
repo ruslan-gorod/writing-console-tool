@@ -59,7 +59,6 @@ public class Helper {
                 case "countTables" -> parameters.setCountTables(Integer.parseInt(value));
                 case "countColumns" -> parameters.setCountColumns(Integer.parseInt(value));
                 case "countRows" -> parameters.setCountRows(Integer.parseInt(value));
-                case "connections" -> parameters.setConnections(Integer.parseInt(value));
                 case "maxNameLength" -> parameters.setMaxNameLength(Integer.parseInt(value));
                 case "types" -> parameters.setTypes(Arrays.asList(value.split(",")));
                 default -> throw new RuntimeException("Unknown field:" + key);

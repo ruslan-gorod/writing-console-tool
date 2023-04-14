@@ -11,7 +11,6 @@ public class AppParameters {
     private int countTables;
     private int countColumns;
     private int countRows;
-    private int connections;
     private int maxNameLength;
     private List<String> types;
 }

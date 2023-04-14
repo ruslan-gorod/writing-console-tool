@@ -1,6 +1,5 @@
 countTables=100
 countColumns=100
 countRows=10000
-connections=10
 maxNameLength=10
 types=INT,DOUBLE PRECISION,VARCHAR(50),BOOLEAN
